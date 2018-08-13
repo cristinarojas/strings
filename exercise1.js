@@ -5,15 +5,19 @@ let str3 = 123;
 
 let x = (str) => {
   if (isNaN(str)) {
-    console.log('ilegal number - string')
+    console.log('is string');
+    return false;
   } else {
-    console.log('legal number - number');
+    console.log('is number');
+    return true;
   }
 }
 
-x(str2);
+x(str3);
 
 // isNaN --> function determines whether a value is an illegal number and return true.
 console.log(isNaN('hola')); // True
+console.log(isNaN('2cristina2')); // True
+
 console.log(isNaN(123)); // False
 console.log(isNaN('123')); // False first convert the value in number and then evaluate.
